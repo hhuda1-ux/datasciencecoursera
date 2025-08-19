@@ -1,0 +1,23 @@
+#' ## Git Operations Workflow
+#' Demonstrate checking Git status, staging, committing, and pushing files using gert.
+
+# Install and load gert
+install.packages("gert")
+library(gert)
+
+# Check Git status
+git_status()
+
+# Stage all new/modified files
+git_add(".")
+
+# Commit changes
+git_commit("Resolve merge conflicts")  # only if conflicts existed
+git_commit("Add initial project files") # Commit changes
+
+# Push to GitHub
+git_push() # normal push
+git_push(force = TRUE) # force push if needed
+
+# Convert R script to R Markdown
+knitr::spin("your_script.R", knit = FALSE)  # creates your_script.Rmd
