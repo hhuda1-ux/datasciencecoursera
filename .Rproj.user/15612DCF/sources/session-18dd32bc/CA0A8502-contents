@@ -1,26 +1,2 @@
-#' ---
-#' title: "How to resolve commit issue and create R markdown"
-#' author: "hhuda1"
-#' date: "`r Sys.Date()`"
-#' output: html_document
-#' ---
+## How to resolve commit issue and create R markdown
 
-install.packages("gert")
-library(gert)
-
-# Check Git status
-git_status()
-
-# Stage all new/modified files
-git_add(".")  
-
-# Commit changes
-git_commit("Resolve merge conflicts")
-git_commit("Add initial project files")
-
-# Push to GitHub
-git_push() 
-git_push(force = TRUE)
-
-# Convert R script to R Markdown
-knitr::spin("your_script.R", knit = FALSE)  # creates your_script.Rmd

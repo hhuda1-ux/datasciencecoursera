@@ -11,7 +11,7 @@
 
 
 
-<title>Resolve Commit How To</title>
+<title>Resolve-Commit-How-To.knit</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,17 +348,13 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Resolve Commit How To</h1>
 
 </div>
 
 
-<p>#’ ## Git Operations Workflow #’ Demonstrate checking Git status,
-staging, committing, and pushing files using gert.</p>
-<div id="install-and-load-gert" class="section level1">
-<h1>Install and load gert</h1>
+<p>#’ — #’ title: “How to resolve commit issue and create R markdown” #’
+author: “hhuda1” #’ date: “2025-08-19” #’ output: html_document #’ —</p>
 <p>install.packages(“gert”) library(gert)</p>
-</div>
 <div id="check-git-status" class="section level1">
 <h1>Check Git status</h1>
 <p>git_status()</p>
@@ -369,13 +365,12 @@ staging, committing, and pushing files using gert.</p>
 </div>
 <div id="commit-changes" class="section level1">
 <h1>Commit changes</h1>
-<p>git_commit(“Resolve merge conflicts”) # only if conflicts existed
-git_commit(“Add initial project files”) # Commit changes</p>
+<p>git_commit(“Resolve merge conflicts”) git_commit(“Add initial project
+files”)</p>
 </div>
 <div id="push-to-github" class="section level1">
 <h1>Push to GitHub</h1>
-<p>git_push() # normal push git_push(force = TRUE) # force push if
-needed</p>
+<p>git_push() git_push(force = TRUE)</p>
 </div>
 <div id="convert-r-script-to-r-markdown" class="section level1">
 <h1>Convert R script to R Markdown</h1>
