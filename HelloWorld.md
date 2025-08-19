@@ -4,4 +4,5 @@ install.packages("gert")
 library(gert)
 git_status()
 git_add(".")  # stages all new/modified files
-git_commit("Add initial project files")
+git_commit("Add initial project files") # Commit changes
+git_push() # Push to GitHub
